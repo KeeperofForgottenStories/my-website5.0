@@ -141,7 +141,75 @@ Keeper of Forgotten Stories
 
 </footer>
 
+<div
+    id="storyModal"
+    class="modal"
+>
 
+    <div class="modal-content">
+
+        <button
+            onclick="closeStory()"
+        >
+            X
+        </button>
+
+
+        <span
+            id="modalStatus"
+            class="story-status"
+        ></span>
+
+
+        <h2
+            id="modalTitle"
+        ></h2>
+
+
+        <p
+            id="modalDescription"
+        ></p>
+
+
+        <div class="comments-section">
+
+            <h3>
+                Comentários
+            </h3>
+
+
+            <input
+                id="commentName"
+                type="text"
+                maxlength="50"
+                placeholder="Seu nome ou pseudônimo"
+            >
+
+
+            <textarea
+                id="commentText"
+                maxlength="2000"
+                placeholder="Escreva seu comentário..."
+            ></textarea>
+
+
+            <button
+                onclick="sendComment()"
+            >
+                Publicar comentário
+            </button>
+
+
+            <div
+                id="comments"
+            ></div>
+
+        </div>
+
+    </div>
+
+</div>
+    
 <script src="js/supabase.js"></script>
 
 <script src="data/stories.js"></script>
